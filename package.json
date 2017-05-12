@@ -1,0 +1,20 @@
+{
+  "name": "ssl-nginx",
+  "version": "1.0.0",
+  "author": "Tundra Fizz",
+  "description": "Automatically creates an SSL certificate for a domain that's currently online.",
+  "main": "main.js",
+  "license": "ISC",
+  "dependencies": {
+    "request": "latest",
+    "mysql":   "latest"
+  },
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TundraFizz/Node-SSL-NGINX"
+  }
+}

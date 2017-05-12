@@ -1,0 +1,64 @@
+"searchResultsCount": 150, // USELESS! How many total non-deleted posts/threads were found
+"resultsCount": 50,        // USELESS! How many non-deleted posts/threads were presented to the user
+"applicationId": "",       // I don't think I care about this
+"applications": []         // An array that contains an object for each subboard (I don't care about this)
+"searchResults": [         // An array that contains objects on all posts found
+  {
+    "comment": {                                    // This means it's a regular post
+      "id": "00000000",                             // ID of the post
+      "message": "Hello",                           // Post content
+      "htmlMessage": null,                          // ?
+      "badWordReplacements": null,                  // ?
+      "user": {},                                   // User object
+      "parentCommentId": "0000"                     // Parent comment
+      "replies": {},                                // Object of stuff I don't really care about
+      "createdAt": "2017-05-12T18:36:46.610+0000",  // Timestamp when the post was created
+      "modifiedAt": "2017-05-12T18:54:51.806+0000", // Timestamp when the post was last edited
+      "upVotes": 8,                                 // How many upvotes the post has
+      "downVotes": 3,                               // How many downvotes the post has
+      "numChildren": 0,                             // How many replies this post has
+      "score": 5,                                   // upVotes + downVotes
+      "levelsDeep": 1,                              // How deeply this post is nested
+      "deleted": false,                             // True of False for if the post is deleted
+      "deletedAt": "",                              // Timestamp when the post was deleted
+      "userVote": null,                             // ?
+      "parentAuthorRead": true,                     // ?
+      "flags": {},                                  // Don't care about this
+      "discussion": {},                             // Reference to the thread
+      "attachments": null,                          // Useless
+
+    }
+  },
+  {
+    "discussion": {         // This means it's a new thread
+      "id": "QlB2WA1W",     // ID of the thread
+      "title": "Hello all", // Title of the thread
+      "user": {},           // User object
+      "upVotes": 5,         // How many upvotes the thread has
+      "downVotes": 2,       // How many downvotes the thread has
+      "userVote": null,     // No idea what this is
+      "viewCount": 52,      // How many views the thread has
+      "softComments": 0,    // ?
+      "totalComments": 0,   // ?
+      "comments": null,     // ?
+      "createdAt": "2017-05-12T18:36:42.193+0000",  // Timestamp when the thread was created
+      "modifiedAt": "2017-05-12T18:36:52.678+0000", // Timestamp when the thread was last edited
+      "lastCommentedAt": null,                      // Timestamp when the last post was made
+      "originatingUrls": null,                      // ?
+      "contentType": "article",                     // ?
+      "body": "I just want to say hi.",             // Post content of the thread
+      "contentBodyBadWordReplacements": null,       // Don't care about this
+      "titleBadWordReplacements": null,             // Don't care about this
+      "commentVotingEnabled": true,                 // If you can vote in this thread
+      "commentCreationEnabled": true,               // If you can post in this thread
+      "isSticky": false,                            // Sticky to current sub-board it's in
+      "isGlobalSticky": false,                      // Stickt to all boards
+      "deleted": false,                             // True of False for if the thread is deleted
+      "deletedAt": false,                           // Timestamp when the thread was deleted
+      "hasRioterComments": false,                   // True of False for if there's Riot posts in this thread
+      "rioterCommentIds": [],                       // Array of comment IDs of Rioters that've posted in this thread
+      "flags": {}                                   // Don't care about this
+      "application": {}                             // Reference to the sub-board that it's in
+    }
+  }
+]

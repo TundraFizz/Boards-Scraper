@@ -1,0 +1,6 @@
+"id":         // ID of the comment or discussion
+"type":       // "comment" OR "discussion"
+"createdAt":  // Timestamp when the post/thread was created
+"user":       // User
+"text":       // The "message" info from comments, or "body" info from discussion
+"discussion": // reference to the discussion ID if it's a comment (NULL if comment)
